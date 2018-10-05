@@ -1,17 +1,18 @@
-ÔÚÆô¶¯ÏîÄ¿ÏÂĞÂ½¨ÎÄ¼ş¼ĞCONFIGS£¨ËæÒâ£¬²»´´½¨Ò²ĞĞ£©
+åœ¨å¯åŠ¨é¡¹ç›®ä¸‹æ–°å»ºæ–‡ä»¶å¤¹CONFIGSï¼ˆéšæ„ï¼Œä¸åˆ›å»ºä¹Ÿè¡Œï¼‰
 
-ĞÂÔöÒ»¸öAppSettings.jsonÎÄ¼ş
+æ–°å¢ä¸€ä¸ªAppSettings.jsonæ–‡ä»¶
 
-{¡°Apollo¡±£º{¡°AppId¡±£º¡°ApolloAppId¡±£¬¡°MetaServer¡±£º¡° http£º// localhost£º8080 ¡±// mateServer}}
+{â€œApolloâ€ï¼š{â€œAppIdâ€ï¼šâ€œApolloAppIdâ€ï¼Œâ€œMetaServerâ€ï¼šâ€œ httpï¼š// localhostï¼š8080 â€// mateServer}}
 
 
-#Èë¿ÚÄ£¿é
+#å…¥å£æ¨¡å—
 
 namespace Demo.Web
 {
     [DependsOn(
         typeof(AbpWebMvcModule),
-        typeof(ExceptionlessModule))]
+        typeof(AbpApolloModule),
+        typeof(AbpExceptionlessModule))]
     public class WebAppModule : AbpModule
     {
         public override void PreInitialize()
@@ -31,11 +32,11 @@ namespace Demo.Web
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-            //ÆôÓÃ·Ö²¼Ê½ÈÕÖ¾
+            //å¯ç”¨åˆ†å¸ƒå¼æ—¥å¿—
             Configuration.Modules.Exceptionless().EnabledExceptionless = true;
-            //ExceptionlesÃÜÔ¿
+            //Exceptionleså¯†é’¥
             Configuration.Modules.Exceptionless().ExceptionlessKey = "3kTYCVGsx6TDq6i8FNkV9z0MNeLf6q5OARtPjEMn";
-            //Exceptionless·şÎñÆ÷µØÖ·
+            //ExceptionlessæœåŠ¡å™¨åœ°å€
             Configuration.Modules.Exceptionless().ExceptionlessUrl = "http://localhost:20000";
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
