@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2041
+VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abp.Apollo", "Abp.Apollo\Abp.Apollo.csproj", "{1E41A53E-ADDF-4B95-B3B9-555A8FBAE2FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abp.Apollo", "Abp.Apollo.csproj", "{1E41A53E-ADDF-4B95-B3B9-555A8FBAE2FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abp.Exceptionless", "Abp.Exceptionless\Abp.Exceptionless.csproj", "{71031BF7-B1B0-42F1-B4BA-0818C7ABEDC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abp.Exceptionless", "..\Abp.Exceptionless\Abp.Exceptionless.csproj", "{71031BF7-B1B0-42F1-B4BA-0818C7ABEDC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {95683C43-9FDA-41C7-BBE8-1EAAA5521735}
+		SolutionGuid = {73CF172B-0CED-41FA-BBFC-B6787223C07B}
 	EndGlobalSection
 EndGlobal
