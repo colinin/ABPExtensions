@@ -26,7 +26,7 @@ namespace Abp.Exceptionless
     {
         public override void PreInitialize()
         {
-            IocManager.Register<IInfrastructureConfiguration, InfrastructureConfiguration>();
+            IocManager.Register<IExceptionlessConfiguration, Configuration.ExceptionlessConfiguration>();
         }
         public override void Initialize()
         {

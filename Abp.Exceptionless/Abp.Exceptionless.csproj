@@ -186,8 +186,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\ExceptionlessConfig.cs" />
-    <Compile Include="Configuration\IInfrastructureConfiguration.cs" />
-    <Compile Include="Configuration\InfrastructureConfiguration.cs" />
+    <Compile Include="Configuration\IExceptionlessConfiguration.cs" />
+    <Compile Include="Configuration\ExceptionlessConfiguration.cs" />
     <Compile Include="ExceptionlessModule.cs" />
     <Compile Include="Logging\Log4NetLogger.cs" />
     <Compile Include="Logging\Log4NetLoggerFactory.cs" />

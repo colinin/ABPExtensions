@@ -19,9 +19,9 @@ namespace Abp.Exceptionless.Startup
 {
     public static class AbpConfigurationExtensions
     {
-        public static IInfrastructureConfiguration Exceptionless(this IModuleConfigurations configurations)
+        public static IExceptionlessConfiguration Exceptionless(this IModuleConfigurations configurations)
         {
-            return configurations.AbpConfiguration.Get<IInfrastructureConfiguration>();
+            return configurations.AbpConfiguration.Get<IExceptionlessConfiguration>();
         }
     }
 }

@@ -15,7 +15,7 @@
 
 namespace Abp.Exceptionless.Configuration
 {
-    public interface IInfrastructureConfiguration
+    public interface IExceptionlessConfiguration
     {
         string ExceptionlessKey { get; set; }
         string ExceptionlessUrl { get; set; }

@@ -15,12 +15,12 @@
 
 namespace Abp.Exceptionless.Configuration
 {
-    public class InfrastructureConfiguration : IInfrastructureConfiguration
+    public class ExceptionlessConfiguration : IExceptionlessConfiguration
     {
         public string ExceptionlessKey { get; set; }
         public string ExceptionlessUrl { get; set; }
         public bool EnabledExceptionless { get; set; }
-        public InfrastructureConfiguration()
+        public ExceptionlessConfiguration()
         {
             EnabledExceptionless = false;
             ExceptionlessKey = "exceptionless";
