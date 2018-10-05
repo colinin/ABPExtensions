@@ -15,7 +15,7 @@
 
 namespace Abp.Exceptionless.Configuration
 {
-    public static class ExceptionlessConfig
+    internal static class ExceptionlessConfig
     {
         public static bool EnabledException { get; set; }
     }
