@@ -188,7 +188,7 @@
     <Compile Include="Configuration\ExceptionlessConfig.cs" />
     <Compile Include="Configuration\IExceptionlessConfiguration.cs" />
     <Compile Include="Configuration\ExceptionlessConfiguration.cs" />
-    <Compile Include="ExceptionlessModule.cs" />
+    <Compile Include="AbpExceptionlessModule.cs" />
     <Compile Include="Logging\Log4NetLogger.cs" />
     <Compile Include="Logging\Log4NetLoggerFactory.cs" />
     <Compile Include="Logging\LoggingExtensions.cs" />

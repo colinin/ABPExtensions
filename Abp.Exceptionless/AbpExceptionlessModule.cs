@@ -22,7 +22,7 @@ using System.Reflection;
 
 namespace Abp.Exceptionless
 {
-    public class ExceptionlessModule : AbpModule
+    public class AbpExceptionlessModule : AbpModule
     {
         public override void PreInitialize()
         {
