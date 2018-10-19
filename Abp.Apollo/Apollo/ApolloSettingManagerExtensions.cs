@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 
 namespace Abp.Apollo.Apollo
 {
-    public static class SettingConfigurationExtensions
+    public static class ApolloSettingManagerExtensions
     {
         public static string GetSettingValue(this IApolloSettingManager settingManager, string key)
         {
